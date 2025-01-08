@@ -31,3 +31,8 @@ python3 huggingface_login.py --token HUGGING_FACE_ACCESS_TOKEN
 ```bash
 streamlit run streamlit.py
 ```
+
+### Optional
+
+```bash
+python3 test.py
