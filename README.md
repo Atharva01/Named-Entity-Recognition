@@ -17,7 +17,10 @@ https://github.com/Atharva01/Named-Entity-Recognition.git
 ### Create a virtual environment
 
 ```bash
-python3 -m venv ner
+python3 -m venv ner \
+&&
+source ner/bin/activate \
+&&
 pip install -r requirements.txt
 ```
 ### Add Hugging Face Access Token
