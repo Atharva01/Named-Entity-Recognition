@@ -8,3 +8,15 @@ This application demonstrates Named Entity Recognition (NER) using Hugging Face'
 - Utilizes a pre-trained BERT model fine-tuned for NER
 - Interactive web interface built with Streamlit
 - Displays recognized entities with their labels and confidence scores
+
+
+### Clone repo
+```bash
+https://github.com/Atharva01/Named-Entity-Recognition.git
+```
+### Create a virtual environment
+
+```bash
+python3 -m venv ner
+pip install -r requirements.txt
+```
