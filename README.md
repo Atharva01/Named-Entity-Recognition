@@ -20,3 +20,14 @@ https://github.com/Atharva01/Named-Entity-Recognition.git
 python3 -m venv ner
 pip install -r requirements.txt
 ```
+### Add Hugging Face Access Token
+
+```bash
+modify huggingface_login.py
+```
+
+### Run the StreamLit App 
+
+```bash
+streamlit run streamlit.py
+```
