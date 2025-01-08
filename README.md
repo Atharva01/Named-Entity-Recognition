@@ -35,4 +35,5 @@ streamlit run streamlit.py
 ### Optional
 
 ```bash
-python3 test.py
+python3 test.py --token HUGGING_FACE_ACCESS_TOKEN
+```
