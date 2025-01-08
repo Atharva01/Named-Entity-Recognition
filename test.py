@@ -1,6 +1,10 @@
 import subprocess
+import argparse
+parser = argparse.ArgumentParser(description="Hugging Face login thorugh CLI")
+parser.add_argument('--token',type=str,help='Your Hugging Face Access Token')
+args = parser.parse_args()
 subprocess.run(
-    ["python3","huggingface_login.py"]
+    ["python3","huggingface_login.py",args.token]
 )
 from service.service import NER
 text = """
