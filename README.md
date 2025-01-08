@@ -22,8 +22,9 @@ pip install -r requirements.txt
 ```
 ### Add Hugging Face Access Token
 
-``bash
+```bash
 python3 huggingface_login.py --token HUGGING_FACE_ACCESS_TOKEN
+```
 
 ### Run the StreamLit App 
 
