@@ -5,7 +5,7 @@ subprocess.run(
                 )
 
 import streamlit as st
-from service.service import NER
+from service import NER
 
 # Streamlit App Title
 st.title("Named Entity Recognition (NER) Application")
