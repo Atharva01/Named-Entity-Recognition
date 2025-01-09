@@ -23,12 +23,10 @@ source ner/bin/activate \
 &&
 pip install -r requirements.txt
 ```
-### Add Hugging Face Access Token
 
-```bash
-python3 huggingface_login.py --token HUGGING_FACE_ACCESS_TOKEN
-```
-
+### Huggingface Token
+1. Update the .env file with token
+   
 ### Run the StreamLit App 
 
 ```bash
