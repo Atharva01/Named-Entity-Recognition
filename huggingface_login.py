@@ -1,16 +1,18 @@
+import os
 import subprocess
-import argparse
+from dotenv import load_dotenv
+load_dotenv()
 
 class Login:
     def __init__(self):
         pass
 
-    def configure_huggingface_token(self,token):
+    def configure_huggingface_token(self):
         """
         Configure Hugging Face CLI with a token programmatically.
         :param token: Hugging Face access token as a string.
         """
-        self.token = token
+        self.token = os.getenv('HUGGINGFACE_TOKEN')
         try:
             # Set the token in Hugging Face CLI configuration
             subprocess.run(
@@ -23,11 +25,8 @@ class Login:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Hugging Face login thorugh CLI")
-    parser.add_argument('--token',type=str,help='Your Hugging Face Access Token')
-    args = parser.parse_args()
     login = Login()
-    login.configure_huggingface_token(args.token)
+    login.configure_huggingface_token()
 
 if __name__ == "__main__":
     main()
