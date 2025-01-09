@@ -5,14 +5,13 @@ load_dotenv()
 
 class Login:
     def __init__(self):
-        pass
+        self.token = os.getenv('HUGGINGFACE_TOKEN')
 
     def configure_huggingface_token(self):
         """
         Configure Hugging Face CLI with a token programmatically.
         :param token: Hugging Face access token as a string.
         """
-        self.token = os.getenv('HUGGINGFACE_TOKEN')
         try:
             # Set the token in Hugging Face CLI configuration
             subprocess.run(
